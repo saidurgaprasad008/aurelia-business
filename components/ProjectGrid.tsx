@@ -13,10 +13,13 @@ export default function ProjectGrid() {
             <p className="mb-5 text-[10px] uppercase tracking-[0.3em] text-[#c8b48a]">
               Selected Work
             </p>
+
             <h2 className="editorial-title max-w-3xl">
               Spaces with
               <br />
-              <span className="italic text-white/55">a sense of place.</span>
+              <span className="italic text-white/55">
+                a sense of place.
+              </span>
             </h2>
           </div>
 
@@ -31,10 +34,19 @@ export default function ProjectGrid() {
             <motion.a
               href="#"
               key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.7, delay: index * 0.08 }}
+              initial={false}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+              }}
+              viewport={{
+                once: true,
+                amount: 0.05,
+              }}
+              transition={{
+                duration: 0.7,
+                delay: index * 0.08,
+              }}
               className={`group block ${
                 index % 2 === 1 ? "md:mt-32" : ""
               }`}
@@ -43,6 +55,8 @@ export default function ProjectGrid() {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading={index < 2 ? "eager" : "lazy"}
+                  decoding="async"
                   className="h-full w-full object-cover transition duration-1000 ease-out group-hover:scale-[1.04]"
                 />
 
@@ -58,9 +72,11 @@ export default function ProjectGrid() {
                   <p className="mb-2 text-[10px] uppercase tracking-[0.22em] text-[#c8b48a]">
                     {project.number}
                   </p>
+
                   <h3 className="text-2xl tracking-[-0.03em]">
                     {project.title}
                   </h3>
+
                   <p className="mt-2 text-xs uppercase tracking-[0.15em] text-white/40">
                     {project.category}
                   </p>

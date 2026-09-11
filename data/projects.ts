@@ -5,8 +5,7 @@ export const projects = [
     category: "Residential Architecture",
     location: "Mumbai, India",
     year: "2026",
-    image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85",
+    image: "/projects/casa.jpg",
   },
   {
     number: "02",
@@ -14,8 +13,7 @@ export const projects = [
     category: "Private Residence",
     location: "Goa, India",
     year: "2026",
-    image:
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=85",
+    image: "/projects/house-light.jpg",
   },
   {
     number: "03",
@@ -23,8 +21,7 @@ export const projects = [
     category: "Interior Architecture",
     location: "Bengaluru, India",
     year: "2025",
-    image:
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85",
+    image: "/projects/forma.jpg",
   },
   {
     number: "04",
@@ -32,7 +29,6 @@ export const projects = [
     category: "Creative Workspace",
     location: "New Delhi, India",
     year: "2025",
-    image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85",
+    image: "/projects/atelier.jpg",
   },
 ];

@@ -1,15 +1,10 @@
-import { ArrowUpRight, Plus } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ProjectGrid from "@/components/ProjectGrid";
+import Services from "@/components/Services";
 
-const services = [
-  "Architecture",
-  "Interior Design",
-  "Hospitality",
-  "Residential",
-  "Commercial",
-];
+
 
 export default function Home() {
   return (
@@ -70,50 +65,9 @@ export default function Home() {
       <ProjectGrid />
 
       {/* Services */}
-      <section id="services" className="border-t border-white/10 bg-[#11110f] py-28 md:py-40">
-        <div className="container-wide">
-          <div className="grid gap-16 md:grid-cols-[1fr_2fr]">
-            <div>
-              <p className="text-[10px] uppercase tracking-[0.3em] text-[#c8b48a]">
-                Capabilities
-              </p>
-            </div>
+<Services />
 
-            <div>
-              <h2 className="editorial-title mb-20">
-                How we
-                <br />
-                <span className="italic text-white/45">shape space.</span>
-              </h2>
-
-              <div className="border-t border-white/15">
-                {services.map((service, index) => (
-                  <div
-                    key={service}
-                    className="group flex items-center justify-between border-b border-white/15 py-7"
-                  >
-                    <div className="flex items-center gap-8">
-                      <span className="text-[10px] tracking-[0.2em] text-white/30">
-                        0{index + 1}
-                      </span>
-                      <h3 className="text-2xl tracking-[-0.03em] transition-transform duration-300 group-hover:translate-x-2 md:text-4xl">
-                        {service}
-                      </h3>
-                    </div>
-
-                    <Plus
-                      size={19}
-                      className="text-white/35 transition-transform duration-300 group-hover:rotate-45"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Statement */}
+{/* Statement */}
       <section className="bg-[#c8b48a] py-28 text-[#171612] md:py-44">
         <div className="container-wide">
           <p className="mb-12 text-[10px] uppercase tracking-[0.3em] text-black/45">
