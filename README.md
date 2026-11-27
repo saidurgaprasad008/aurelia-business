@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aurelia — Architecture & Interiors Demo
 
-## Getting Started
+Live link: Not provided. No verified public deployment URL is configured in this repository.
 
-First, run the development server:
+A single-page architecture and interior design studio website concept. The content and project entries are demo content, and the page labels itself as a demo project.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Screenshot
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- Add screenshot here: desktop homepage -->
+<!-- Add screenshot here: project grid and services -->
+<!-- Add screenshot here: mobile view -->
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js App Router
+- React and TypeScript
+- Tailwind CSS 4
+- Framer Motion for interface animations
+- Lucide React for icons
+- Geist fonts through `next/font`
 
-## Learn More
+## Main features
 
-To learn more about Next.js, take a look at the following resources:
+- Responsive navigation with a mobile menu
+- Animated hero section
+- Studio introduction and design philosophy sections
+- Project grid populated from `data/projects.ts`
+- Expandable service descriptions for architecture, interior design, hospitality, residential and commercial work
+- Contact section with a demo email placeholder
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Run locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Requires Node.js and npm.
 
-## Deploy on Vercel
+1. Clone this repository.
+2. Install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Start the Next.js development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open http://localhost:3000.
+
+Useful scripts:
+
+- `npm run lint` — run ESLint.
+- `npm run build` — create a production build.
+- `npm run start` — start the production server after building.
+
+The contact address in the demo is a placeholder and should be replaced before presenting this as a real business website.
+
+## What I learned
+
+This project helped me practise the Next.js App Router, reusable React components, TypeScript data structures, responsive styling, interactive navigation and animation with Framer Motion.
+
+I use AI-assisted development to help draft and implement code. I review, test and fix the code myself.
